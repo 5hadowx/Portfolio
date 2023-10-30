@@ -1,0 +1,95 @@
+html {
+    background-image: url(./resources/background-forest.jpg);
+    color: aliceblue;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: "Press Start 2P";
+    font-size: 1.4rem;
+    word-spacing: -10px;
+}
+
+h2 {
+    font-family: "Press Start 2P";
+    font-size: 1.2rem;
+    word-spacing: -10px;
+}
+
+p {
+    font-family: Dotgothic16;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#logo {
+    margin: 0;
+}
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    font-family: "Press Start 2P";
+    font-size: 0.8rem;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: 0px;
+    margin-left: auto;
+    
+}
+
+.navigation-item {
+    width: 120px;
+}
+
+.link-divider {
+    border-right: 1px solid black;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+
+.before-img-container { grid-area: before; }
+
+.portrait { 
+    grid-area: portrait; 
+    max-width: 500px;
+}
+
+.after-img-container { grid-area: after; }
+        
+.about-me-container {
+    display: grid;
+    grid-template-areas:
+       'before before before before before portrait'
+       'after after after after after after';
+    column-gap: 80px;
+}
+
+a:link, a:visited {
+    color: aliceblue;
+}
+
+a:hover {
+    color: darkgray;
+    opacity: 0.5;
+}
