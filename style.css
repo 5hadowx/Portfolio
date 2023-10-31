@@ -167,7 +167,9 @@ a:hover {
         margin-left: 10px;
     }
 
-
+    #contact {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -241,4 +243,18 @@ a:hover {
 .videos {
     width: 560px;
     height: 315px;
+}
+
+#contact-text {
+    margin-top: 30px;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact-text-container {
+    margin-top: 20px;
+    margin-left: 40px;
 }
