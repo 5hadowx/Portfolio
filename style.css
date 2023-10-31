@@ -71,16 +71,19 @@ p {
 .portrait { 
     grid-area: portrait; 
     max-width: 500px;
+    max-height: 300px;
 }
 
-.after-img-container { grid-area: after; }
+.after-img-container { 
+    grid-area: after;
+}
         
 .about-me-container {
     display: grid;
     grid-template-areas:
        'before before before before before portrait'
        'after after after after after after';
-    column-gap: 80px;
+    column-gap: 90px;
 }
 
 a:link, a:visited {
@@ -134,3 +137,71 @@ a:hover {
 }
 
 .show {display:block;}
+
+@media screen and (max-width: 1000px) {
+    .about-me-container {
+        display: grid;
+        width: auto;
+        grid-template-areas:
+           'before before' 
+           'portrait portrait'
+           'after after';
+        column-gap: 0px;
+    }
+
+    h1 {
+        font-family: "Press Start 2P";
+        font-size: 1rem;
+        word-spacing: -8px;
+    }
+    
+    h2 {
+        font-family: "Press Start 2P";
+        font-size: 0.8rem;
+        word-spacing: -8px;
+    }
+    
+    p {
+        font-family: Dotgothic16;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    #logo {
+        font-size: 1rem;
+    }
+
+    .navigation-items {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navigation-items {
+        display: inline-block;
+        width: auto;
+    }
+
+    .link-divider {
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    h1 {
+        font-family: "Press Start 2P";
+        font-size: 0.8rem;
+        word-spacing: -6px;
+    }
+    
+    h2 {
+        font-family: "Press Start 2P";
+        font-size: 0.7rem;
+        word-spacing: -6px;
+    }
+    
+    p {
+        font-family: Dotgothic16;
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+}
