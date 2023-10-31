@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"> 
-    <style>
-        
-        </style>
 </head>
 <body>
     <header>
         <nav>
             <h1 id="logo">Damian "Shadow" Soubeste</h1>
             <ul class="navigation-items">
-                <li class="navigation-item link-divider">
+                <li id="about-me" class="navigation-item link-divider">
                     <a href="./about-me.html">About Me</a>
                 </li>
-                <li class="navigation-item link-divider">
-                    <a href="./projects-videogame.html">Projects</a>
+                <li id="projects" class="navigation-item link-divider dropdown">
+                    <button id="button" class="dropbtn">Projects</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./projects-videogame.html">Video Game</a>
+                        <a href="./projects-fullstack.html">Full-Stack</a>
+                    </div>
                 </li>
-                <li class="navigation-item">
+                <li id="contact" class="navigation-item">
                     <a href="./contact.html">Contact</a>    
                 </li>
             </ul>
@@ -51,7 +52,7 @@
                         Senior Programmer Specialized in Video Game Design. So far, I completed the masters of Game Design, 
                         Programming in Unreal Engine and Programming in Unity. This is my final year in what is called 
                         The Studio Production experience which tries to simulate a real life video game studio, with the 
-                        objective of developing a full game throughout the year (estimated completion, June 2024).
+                        objective of developing and publishing a full game throughout the year (estimated completion, June 2024).
                     </p>
                     <p>
                         My passion for video games made me discover this world and thanks to this I also started learning 
@@ -59,12 +60,13 @@
                         So in parallel to video game development I am on my path to becoming a full-stack engineer.
                     </p>
                     <p>
-                        This is a bit about myself and you can check the other sections of my portfolio to see how I 
+                        This is a bit about me and you can check the other sections of my portfolio to see how I 
                         reinvented myself and became a full time developer.
                     </p>
                 </div>    
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
