@@ -20,33 +20,38 @@ nav {
     margin-bottom: 10px;
 }
 
-h1 {
+#logo {
     font-family: "Press Start 2P";
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     word-spacing: -10px;
 }
 
 h2 {
     font-family: "Press Start 2P";
-    font-size: 1rem;
+    font-size: 1.2rem;
     word-spacing: -10px;
 }
 
 h3 {
     font-family: "Press Start 2P";
-    font-size: 0.9rem;
+    font-size: 1rem;
     word-spacing: -10px;
+}
+
+h4 {
+    font-family: "Press Start 2P";
+    font-size: 0.9rem;
+    word-spacing: -8px;
 }
 
 p {
     font-family: Dotgothic16;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
 }
 
-#logo {
-    margin: 0;
-    font-size: 1.5rem;
+#about-me-text {
+    margin-top: 30px;
 }
 
 .navigation-items {
@@ -76,11 +81,11 @@ p {
 
 .portrait { 
     grid-area: portrait; 
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 450px;
+    max-height: 250px;
     width: auto;
     height: auto;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .after-img-container { 
@@ -189,34 +194,35 @@ a:hover {
         border: none;
     }
 
-    h1 {
-        font-family: "Press Start 2P";
+    #logo {
         font-size: 1.2rem;
+        width: auto;
+        max-width: 200px;
         word-spacing: -8px;
     }
     
     h2 {
         font-family: "Press Start 2P";
-        font-size: 0.8rem;
+        font-size: 1rem;
         word-spacing: -8px;
     }
     
     h3 {
         font-family: "Press Start 2P";
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         word-spacing: -8px;
+    }
+
+    h4 {
+        font-family: "Press Start 2P";
+        font-size: 0.7rem;
+        word-spacing: -6px;
     }
 
     p {
         font-family: Dotgothic16;
         font-size: 0.8rem;
         text-align: justify;
-    }
-
-    #logo {
-        font-size: 1.2rem;
-        width: auto;
-        max-width: 200px;
     }
 }
 
@@ -251,10 +257,26 @@ a:hover {
 
 .contact-container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .contact-text-container {
     margin-top: 20px;
     margin-left: 40px;
+}
+
+#games-text {
+    margin-top: 30px;
+}
+
+#full-stack-text {
+    margin-top: 30px;
+}
+
+.portfolio-project-container {
+    margin-top: 50px;
+}
+
+.tech-img {
+    margin-right: 15px;
 }
