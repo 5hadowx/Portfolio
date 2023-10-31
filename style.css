@@ -32,6 +32,12 @@ h2 {
     word-spacing: -10px;
 }
 
+h3 {
+    font-family: "Press Start 2P";
+    font-size: 0.9rem;
+    word-spacing: -10px;
+}
+
 p {
     font-family: Dotgothic16;
     font-size: 1rem;
@@ -156,6 +162,12 @@ a:hover {
     #logo {
         margin-left: 10px;
     }
+
+    #projects-container {
+        margin-left: 10px;
+    }
+
+
 }
 
 @media screen and (max-width: 650px) {
@@ -165,6 +177,11 @@ a:hover {
         font-size: 0.6rem;
     }
 
+    .videos {
+        width: auto;
+        height: auto;
+    }
+
     .link-divider {
         margin-bottom: 10px;
         border: none;
@@ -172,7 +189,7 @@ a:hover {
 
     h1 {
         font-family: "Press Start 2P";
-        font-size: 1rem;
+        font-size: 1.2rem;
         word-spacing: -8px;
     }
     
@@ -182,6 +199,12 @@ a:hover {
         word-spacing: -8px;
     }
     
+    h3 {
+        font-family: "Press Start 2P";
+        font-size: 0.7rem;
+        word-spacing: -8px;
+    }
+
     p {
         font-family: Dotgothic16;
         font-size: 0.8rem;
@@ -189,7 +212,7 @@ a:hover {
     }
 
     #logo {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -208,4 +231,12 @@ a:hover {
     background-color: rgba(144,192,200,0.1);
     margin: 10px;
 }
-  
+
+.game-container {
+    margin-top: 50px;
+}
+
+.videos {
+    width: 560px;
+    height: 315px;
+}
