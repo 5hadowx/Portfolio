@@ -176,19 +176,18 @@ a:hover {
 }
 
 @media screen and (max-width: 650px) {
-    #background_wrap {
+    body {
         z-index: -1;
-        position: fixed;
+        /*position: fixed;*/
         top: 0;
-        left: 0;
+        background-position-x: 50%;
         height: 100%;
         width: 100%;
         background-size: cover;
         background-image: url(./resources/background.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-repeat: no-repeat; 
     }
-
+    
     .navigation-items {
         display: inline-block;
         width: auto;
@@ -200,10 +199,6 @@ a:hover {
         height: auto;
     }
 
-    .link-divider {
-        margin-bottom: 10px;
-        border: none;
-    }
 
     #logo {
         font-size: 1.2rem;
