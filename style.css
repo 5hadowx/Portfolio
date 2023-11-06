@@ -151,14 +151,6 @@ a:hover {
 .show {display:block;}
 
 @media screen and (max-width: 1000px) {
-    .body {
-        background: url(./resources/background.jpg) no-repeat center center fixed;
-    }
-
-    .dropdown-content {
-        background: url(./resources/background.jpg) no-repeat center center fixed;
-    }
-        
     .about-me-container {
         display: grid;
         grid-template-areas:
@@ -184,12 +176,17 @@ a:hover {
 }
 
 @media screen and (max-width: 650px) {
-    .body {
-        background: url(./resources/background.jpg) no-repeat center center fixed;
-    }
-
-    .dropdown-content {
-        background: url(./resources/background.jpg) no-repeat center center fixed;
+    #background_wrap {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-image: url(./resources/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 
     .navigation-items {
